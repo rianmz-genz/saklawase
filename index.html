@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <title>2022s</title>
+
+</head>
+<body>
+  <div class="container" id="con1">
+    <div class="header item">
+      <img src="images/Untitled-1.png" alt="">
+    </div>
+    <div class="paragraph item">
+      <h2>Surat Cinta
+      </h2>
+      <p>Akuu adaaa sesuaatu untukmuuu</p>
+    </div>
+    <div class="plan item">
+      <p><span style="font-weight: 700;">Vinkaa Afiyataa Mentarii Pranataa</span> <br>yang paling cantikkkk seduniaaaa</p>
+    </div>
+    <div class="btn item">
+      <button type="submit" onclick="openPopup()">Sesuatu</button>
+    </div>
+  </div>
+  <div class="container2" id="con2">
+    <div class="header item">
+      <img src="images/Untitled-1.png" alt="">
+    </div>
+    <div class="paragraph item">
+      <h2>Maturnuwun
+      </h2>
+      <p>sak menten mawon ingkang kulo aturaken</p>
+    </div>
+    <div class="plan item">
+      <p><span style="font-weight: 700;">Vinkaa Afiyataa Mentarii Pranataa</span> <br>kulo tresna dateng panjenengan ing saben universe</p>
+    </div>
+    <div class="btn item">
+      <img src="images/FOOTER.png" alt="">
+    </div>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="header item">
+      <img src="images/Untitled-22.png" alt="">
+    </div>
+    <h5>Hai cantikuu yang sukanya ketiduran dan ngambek, aku ada puisi untukmu</h5>
+    <button type="submit" onclick="closePopup()">Gas?</button>
+</div>
+<div class="popup" id="popup2">
+  <div class="header item">
+    <img src="images/Untitled-2.png" alt="">
+  </div>
+  <h4>Fiyata?</h4>
+  <p>perempuan yang membuat ku jatuh cinta</p>
+  <p>membuatku selalu bersyukur memilikinya</p>
+  <p>tidak ada semua akan indah pada waktunya</p>
+  <p>karena setiap hari begitu indah bersamanya.</p>
+  <button type="submit" onclick="closePopup2()">Lanjoet</button>
+</div>
+<div class="popup" id="popup3">
+  <div class="header item">
+    <img src="images/Untitled-3.png" alt="">
+  </div>
+  <p>menerima kekurangan dan kelebihan</p>
+  <p>tak banyak yang bisa ku ungkapkan</p>
+  <p>hanya terima kasih yang bisa ku ucapkan</p>
+  <p>Dari aku untukmu yang rupawan</p>
+  <button type="submit" onclick="closePopup3()">Terima Kasih</button>
+</div>
+  <div class="attribution">
+    Dari cowo yang tidak sempurna.
+  </div>
+
+  <script>
+    var popup = document.getElementById('popup');
+    var popup2 = document.getElementById('popup2');
+    var popup3 = document.getElementById('popup3');
+    var con = document.getElementById('con1');
+    var con2 = document.getElementById('con2');
+
+    function openPopup(){
+      popup.classList.add("open-popup");
+    }
+    function closePopup(){
+      popup.classList.remove("open-popup");
+      popup2.classList.add("open-popup");
+    }
+    function closePopup2(){
+      popup2.classList.remove("open-popup");
+      popup3.classList.add("open-popup");
+    }
+    function closePopup3(){
+      popup3.classList.remove("open-popup");
+      con.classList.add('containof');
+      con2.classList.add('containop');
+    }
+    
+  </script>
+</body>
+</html>
+
