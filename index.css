@@ -1,0 +1,157 @@
+/* CODED BY Adrian Aji Septa*/
+
+:root {
+    --Pale-blue: hsl(329, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: #f5f7ff;
+    --Desaturated-blue: hsl(316, 82%, 83%);
+    --Dark-blue: hsl(223, 47%, 23%);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-size: cover;
+    background-color: var(--Pale-blue);
+    background-position: bottom;
+    margin: 0 1.5rem;
+    min-height: calc(100vh - 0.1px);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    background-color: #fff8dc;
+    border-radius: 20px;
+  }
+  .container2{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    background-color: #fff8dc;
+    border-radius: 20px;
+  }
+  .containop{
+    visibility: visible;
+  }
+  .containof{
+    visibility: hidden;
+  }
+
+  .popup{
+   width: 300px;
+  background: var(--Very-pale-blue);
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: var(--text-color);
+  visibility: hidden;
+  position: fixed;
+  transition: transform .35s, top .35s;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  transition: .35s;
+  }
+  .open-popup{
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    transition: .35s;
+  }
+  .popup button{
+    background: #333;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .popup p{
+    font-size: 12px;
+  }
+  .header img {
+    width: 100%;
+    min-height: 240px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+  
+  .paragraph {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .paragraph h2 {
+    margin-bottom: 20px;
+    font-weight: 900;
+  }
+  
+  .paragraph p {
+    color: black;
+  }
+  
+  .plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    min-width: 300px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .plan a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  
+  
+  .btn {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn button {
+    margin-bottom: 20px;
+    background-color: var(--Very-pale-blue);
+    border: none;
+    padding: 15px 40px 15px;
+    transition: 0.3s;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .btn button:hover {
+    opacity: 70%;
+  }
+  
+  
